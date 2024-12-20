@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header id="oii">
+  <div class="navbar">
+    <img src="logo.png"  class="logo">
+    <h3>Book review website</h3>
+  <ul id="navi">
+   <li> <a href="index.html">Home</a></li>
+   <li> <a href="reviews.html">reviews</a></li>
+   <li> <a href="About.html">About us</a></li>
+    <li><a href="Contact_us.html">Contact us</a></li>
+   <li> <a href="sign_in.html">Sign in</a></li>
+  </ul>
+  </div>
+ 
+  <div>
+
+   
+  </div>
+ </header>
+ <main id="giii">
+  <hr>
+  <h2>Top  rated reviews</h2>
+  <p>Dive into our most popular reviews and see what your fellow readers think!</p>
+  <br>
+  <div >
+    <img src="book1.png" alt="book ki photo">
+    <p><b>A Gripping Tale of Adventure</b></p><br>
+    <p>Join the protagonist on a thrilling journey through uncharted territories. This review highlights the book's captivating plot and vibrant characters, making it a must-read for adventure lovers.</p>
+    <br><p>Rating  4.9&star;/5&star;</p>
+  </div>
+  <br>
+  <div >
+    <img src="book2.jpg" alt="book ki photo">
+    <p><b>A Heartwarming Story of Love</b></p><br>
+    <p>This review captures the essence of a beautifully written romance that touches the heart. Explore the themes of love and sacrifice that resonate with readers of all ages.</p> <br><p>Rating  4.8&star;/5&star;</p>
+  </div><br>
+  <div >
+    <img src="book3.jpg" alt="book ki photo">
+    <p><b>An Insightful Look at Humanity</b></p><br>
+    <p>Delve into this thought-provoking review that examines the complexities of human nature. This book challenges conventional thinking and invites readers to reflect on their own lives.</p>
+    <br><p>Rating  4.7&star;/5&star;</p>
+  </div><br>
+  <div >
+    <img src="book4.jpg" alt="book ki photo">
+    <p><b>Make Your Voice Heard</b></p><br>
+    <p>Your opinion matters! By submitting a review, you are not only sharing your personal thoughts but also influencing other readers' choices. Each review contributes to the overall rating system, helping others discover great books and avoid those that may not meet their expectations.</p>
+    <br><p>Rating  4.6&star;/5&star;</p>
+  </div>
+  <br><br>
+  <a href="reviews.html">More reviews</a>
+  <hr>
+  <h3>Post a Review</h3>
+  <form id="form" onsubmit="validateForm(event)">
+    <input type="text" placeholder="Name" required><br>
+    <input type="text" placeholder="Name of the book" required><br>
+    <textarea name="comment" id="comment" placeholder="Write your review here"></textarea><br>
+    <p>Give your rating</p>
+    <div class="rating-options">
+        <input type="radio" name="rating" id="rating1" value="1" style="display: inline;" required>
+        <label for="rating1" style="display: inline;">1</label>
+        <input type="radio" name="rating" id="rating2" value="2" style="display: inline;">
+        <label for="rating2" style="display: inline;">2</label>
+        <input type="radio" name="rating" id="rating3" value="3" style="display: inline;">
+        <label for="rating3" style="display: inline;">3</label>
+        <input type="radio" name="rating" id="rating4" value="4" style="display: inline;">
+        <label for="rating4" style="display: inline;">4</label>
+        <input type="radio" name="rating" id="rating5" value="5" style="display: inline;">
+        <label for="rating5" style="display: inline;">5</label>
+    </div>
+    <button type="submit">Submit</button>
+</form>
+
+  
+  <br>
+  
+  <br>
+
+  </main>
+  <footer>
+    <hr>
+    <p>Made with &hearts; by Pushkar garg</p>
+    <div>
+      <a href="contact_us.html"> Contact us</a>
+      <a href="https://www.linkedin.com/in/pushkar-garg-836542328/">Linked in</a>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>
+<script>
+  function validateForm(event) {
+            event.preventDefault();
+
+            const name = document.querySelector('input[placeholder="Name"]').value;
+            const bookName = document.querySelector('input[placeholder="Name of the book"]').value;
+            const comment = document.getElementById('comment').value;
+            const rating = document.querySelector('input[name="rating"]:checked');
+
+            if (name && bookName && comment && rating) {
+                
+                alert("Review is submitted");
+
+                setTimeout(function() {
+                    window.location.href = "index.html"; 
+                }, 2000);
+            } else {
+                alert("Please fill all the details before submitting.");
+            }
+        }
+</script>

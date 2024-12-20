@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body >
+    <header id="iiii">
+        <div class="navbar">
+            <img src="logo.png" class="logo" alt="Logo">
+            <h3>Book Review Website</h3>
+            <ul id="navi">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Contact_us.html">Contact Us</a></li>
+            
+            </ul>
+        </div>
+    </header>
+    
+    <form id="login-form" action="reviews.html">
+        <label for="user">Username</label>
+        <input type="text" id="user" name="user" placeholder="Username" required>
+        <br>
+        <label for="pass">Password</label>
+        <input type="password" id="pass" name="password" placeholder="Password" required>
+        <br>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+    <footer id="qqq">
+        
+        <p>Made with &hearts; by Pushkar Garg</p>
+        <!-- <div>
+            <a href="contact_us.html">Contact Us</a>
+            <a href="https://www.linkedin.com/in/pushkar-garg-836542328/">LinkedIn</a> -->
+        <!-- </div> -->
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const form = document.getElementById('login-form');
+            const username = document.getElementById('user');
+            const password = document.getElementById('pass');
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                if (username.value.trim() === '' || password.value.trim() === '') {
+                    alert('Please fill in all fields.');
+                    return;
+                }
+
+                const message = document.createElement('div');
+                message.textContent = 'You are logged in.';
+                message.style.fontSize = '1.5em';
+                message.style.color = 'white';
+                message.style.backgroundColor = 'green';
+                message.style.padding = '10px';
+                message.style.textAlign = 'center';
+                message.style.marginTop = '10px';
+                document.body.appendChild(message);
+                
+    setTimeout(() => {
+        window.location.href = "index.html"; 
+    }, 2000);
+
+                    form.submit(); 
+                }, 2500);
+            });
+        
+    </script>
+</body>
+</html>

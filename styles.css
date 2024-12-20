@@ -1,0 +1,236 @@
+#navi{
+  background-color: #333;
+  font-size:xx-large;
+  
+}
+
+
+#qqq{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+}
+#ifrh{
+  color:black;
+  border: 5px solid black;
+ text-decoration: none;
+
+ border: 20px;
+ padding: 10px;
+ margin: 10px;
+
+
+}
+#giii{
+  background-image: url(huu.jpg);
+ background-size:cover;
+  
+}
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  background-image: url(foto.jpg)
+}
+
+header h3 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+  color: #ccc;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+header .navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+header .navbar ul li {
+  margin: 0 15px;
+}
+
+header .navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+header .navbar ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+main {
+  padding: 20px;
+  margin-top: 30px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  font-weight: bold;
+  color:#444;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+hr {
+  border: 1px solid #ddd;
+  margin: 20px 0;
+}
+
+div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+div img {
+  max-width: 120px;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+div p {
+  font-size: 1.1rem;
+}
+
+.rating-options {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.rating-options input {
+  margin-right: 5px;
+}
+
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form button {
+  background-color: #007BFF;
+  color: white;
+  font-size: 1.1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  header h3 {
+      font-size: 1.5rem;
+  }
+
+  header .navbar ul {
+      flex-direction: column;
+  }
+
+  header .navbar ul li {
+      margin: 10px 0;
+  }
+
+  div {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  div img {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+
+  .rating-options {
+      width: 100%;
+      justify-content: space-evenly;
+  }
+
+  form button {
+      width: 100%;
+  }
+}
